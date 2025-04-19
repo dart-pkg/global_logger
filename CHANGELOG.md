@@ -1,11 +1,11 @@
-## 1.0.0
+## 0.0.1
 
-- Official release
+- Initial release
 
 ## 0.0.2
 
 - Support platforms that does not have stderr
 
-## 0.0.1
+## 1.0.0
 
-- Initial release
+- Official release
