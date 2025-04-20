@@ -3,13 +3,12 @@ set -uvx
 set -e
 cwd=`pwd`
 ts=`date "+%Y.%m%d.%H%M"`
-version="${ts//.0/.}"
+version=$(pkgver)
 comment=$1
 
 echo $version
 
 pubspec "$version"
-#dart pub get
 
 cat << EOS >> CHANGELOG.md
 
@@ -24,11 +23,10 @@ dos2unix CHANGELOG.md
 ./do-analyze.sh
 ./do-test.sh
 
-#exit 0
-
-tag="$version"
+cd $cwd
+tag="global_logger-$version"
 git add .
-git commit -m"$comment"
+git commit -m"global_logger: $comment"
 git tag -a "$tag" -m"$tag"
 git push origin "$tag"
 git push origin HEAD:main
