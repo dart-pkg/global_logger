@@ -9,3 +9,7 @@
 ## 1.0.0
 
 - Official release
+
+## 2025.420.1237
+
+- Added version tag to GitHub repository
