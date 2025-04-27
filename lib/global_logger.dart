@@ -16,7 +16,7 @@ class _MyeOutput extends LogOutput {
     for (var $line in $event.lines) {
       try {
         io.stderr.writeln($line);
-      } catch(e) {
+      } catch (e) {
         print($line);
       }
     }
