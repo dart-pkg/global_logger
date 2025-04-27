@@ -1,7 +1,7 @@
 name: global_logger
 description: global_logger package project
 version: 2025.427.1713
-homepage:
+homepage: 
 repository: https://github.com/dart-pkg/global_logger
 
 environment:
